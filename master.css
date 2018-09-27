@@ -63,6 +63,11 @@
   background-repeat: no-repeat;
 }
 
+.bodysec {
+  width: 80vw;
+  margin: 0 auto;
+}
+
 #sec2 {
   border: 2px solid red;
 }
