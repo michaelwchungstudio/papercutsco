@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Gotham";
+  color: #192249;
+}
+
 @font-face {
     font-family: "BebasNeue";
     src: url("fonts/bebasneue.otf");
@@ -55,6 +60,7 @@
   font-style: normal;
 }
 
+/* Section 1: Landing Page - includes landing image, logotype, and navigation bar, as well as motto beneath. */
 #sec1 {
   height: 100vh;
   width: 100vw;
@@ -63,10 +69,85 @@
   background-repeat: no-repeat;
 }
 
-.bodysec {
+/* Top "bar" */
+.headerbar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* border: 2px solid black; */
+}
+
+/* Logotype */
+#logotype {
+  font-size: 3em;
+  margin-left: 1.75vw;
+}
+
+/* Navigation Bar */
+#navbar ul {
+  margin-top: 3.35em;
+  margin-right: 1.75vw;
+  text-align: right;
+}
+
+#navbar ul li {
+  list-style: none;
+  display: inline;
+  font-size: 1.25em;
+  letter-spacing: 2.5px;
+  padding: 0 12px;
+}
+
+.motto {
+  font-weight: 400;
+  font-size: 7.5em;
+  margin-top: 20vh;
+  text-align: center;
+}
+
+.motto:first-child {
+}
+
+/* ************************************* */
+/* .headerbar {
+  width: 100vw;
+  border: 2px solid black;
+}
+
+#orgname {
+  font-size: 3em;
+  margin: 1.25vh 0;
+  display: inline-block;
+  margin-right: 53%;
+}
+
+.navbar {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 1vw;
+  text-align: right;
+}
+
+.navbar li {
+  text-align: right;
+  font-size: 1.25em;
+  list-style: none;
+  display: inline-block;
+}
+*/
+/* ************************************* */
+
+.wrapper {
   width: 80vw;
   margin: 0 auto;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 0.2fr;
 }
+
+/* .bodysec {
+  width: 80vw;
+  margin: 0 auto;
+} */
 
 #sec2 {
   border: 2px solid red;
