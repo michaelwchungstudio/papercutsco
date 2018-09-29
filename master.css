@@ -79,28 +79,34 @@ body {
 /* Logotype */
 #logotype {
   font-size: 3em;
-  margin-left: 1.75vw;
+  margin-left: 2.25vw;
 }
 
 /* Navigation Bar */
 #navbar ul {
-  margin-top: 3.35em;
-  margin-right: 1.75vw;
+  margin-top: 3.55em;
+  margin-right: 2vw;
   text-align: right;
 }
 
 #navbar ul li {
   list-style: none;
   display: inline;
-  font-size: 1.25em;
+  font-weight: 300;
+  font-size: 1.1em;
   letter-spacing: 2.5px;
-  padding: 0 12px;
+  padding: 0 20px;
+}
+
+#navbar ul li:hover {
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .motto {
   font-weight: 400;
   font-size: 7.5em;
-  margin-top: 20vh;
+  margin-top: 23.5vh;
   text-align: center;
 }
 
