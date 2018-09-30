@@ -6,6 +6,7 @@
 
 body {
   font-family: "Gotham";
+  font-weight: 400;
   color: #192249;
 }
 
@@ -110,38 +111,9 @@ body {
   text-align: center;
 }
 
-/* ************************************* */
-/* .headerbar {
-  width: 100vw;
-  border: 2px solid black;
-}
-
-#orgname {
-  font-size: 3em;
-  margin: 1.25vh 0;
-  display: inline-block;
-  margin-right: 53%;
-}
-
-.navbar {
-  width: 500px;
-  display: flex;
-  justify-content: space-between;
-  margin-right: 1vw;
-  text-align: right;
-}
-
-.navbar li {
-  text-align: right;
-  font-size: 1.25em;
-  list-style: none;
-  display: inline-block;
-}
-*/
-/* ************************************* */
-
+/* Wrapper for informational sections */
 .wrapper {
-  width: 80vw;
+  width: 90vw;
   margin: 0 auto;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr 0.2fr;
@@ -152,27 +124,51 @@ body {
   margin: 0 auto;
 } */
 
+/* Section 2: About/Info section includes image and text describing organization */
 #sec2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  border: 2px solid red;
+}
+
+#aboutsec * {
+  margin-left: 1.75vw;
 }
 
 #aboutimg {
-  height: 50vh;
-  width: 50vh;
+  height: 38vw;
+  width: 38vw;
   background-image: url("img/drawing.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 50%;
-  margin: 100px 100px;
+  margin: 10vh 0;
+  margin-left: 3vw;
+  /* border: 1px solid #192249; */
 }
 
+#abtheadertext {
+  margin-top: 15vh;
+  font-weight: 500;
+  font-size: 1.85em;
+}
 
+#abtunderline {
+  margin-top: 1vh;
+  margin-bottom: 5vh;
+  height: 2px;
+  width: 25%;
+  background-color: #192249;
+}
 
-#sec2 div {
+.abttext {
+  line-height: 1.5;
+  width: 82.5%;
+  font-size: 0.95em;
+}
+
+/* #sec2 div {
   border: 2px solid pink;
-}
+} */
 
 #sec3 {
   border: 2px solid orange;
