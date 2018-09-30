@@ -117,7 +117,7 @@ body {
   width: 90vw;
   margin: 0 auto;
   display: grid;
-  grid-template-rows: 1fr 1fr 0.3fr 1fr 0.2fr;
+  grid-template-rows: 0.55fr 1fr 0.25fr 1fr 0.2fr;
 }
 
 /* .bodysec {
@@ -129,6 +129,7 @@ body {
 #sec2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding-top: 5vh;
 }
 
 #aboutsec * {
@@ -156,8 +157,8 @@ body {
 #abtunderline {
   margin-top: 0.5vh;
   margin-bottom: 5vh;
-  height: 2px;
-  width: 25%;
+  height: 1.5px;
+  width: 35%;
   background-color: #192249;
 }
 
@@ -225,6 +226,8 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  margin-top: 6vh;
+  margin-bottom: 6vh;
 }
 
 .sponsorsec {
@@ -234,14 +237,15 @@ body {
 
 .sponsorimgsec {
   display: flex;
-  align-items: center;
   justify-content: center;
+  /* padding-top: 5vh; */
 }
 
 .sponsorimg {
-  height: 19vw;
-  width: 19vw;
+  height: 19.5vw;
+  width: 19.5vw;
   border-radius: 50%;
+  margin-top: 2.5vh;
 }
 
 #artistimg1 {
@@ -264,16 +268,45 @@ body {
   background-size: cover;
 }
 
+.sponsortxtsec {
+  padding-bottom: 12vh;
+}
+
 .sponsorname {
   font-weight: 400;
+  font-size: 1.3em;
   margin-left: 1vw;
-  margin-top: 10.25vh;
+  margin-top: 2vh;
+}
+
+.sponsorunderline {
+  margin-top: 0.75vh;
+  margin-left: 1vw;
+  margin-bottom: 4.5vh;
+  height: 1px;
+  background-color: #192249;
+}
+
+#underline1 {
+  width: 45%;
+}
+
+#underline2 {
+  width: 68%;
+}
+#underline3 {
+  width: 68%;
+}
+#underline4 {
+  width: 58%;
 }
 
 .sponsortxt {
   width: 80%;
   font-size: 0.85em;
   margin-left: 1vw;
+  line-height: 1.45;
+  letter-spacing: 0.15px;
 }
 
 #footbar {
