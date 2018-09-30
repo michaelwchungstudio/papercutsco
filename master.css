@@ -8,6 +8,7 @@ body {
   font-family: "Gotham";
   font-weight: 400;
   color: #192249;
+  background-color: #FDF8F5;
 }
 
 @font-face {
@@ -116,7 +117,7 @@ body {
   width: 90vw;
   margin: 0 auto;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 0.2fr;
+  grid-template-rows: 1fr 1fr 0.3fr 1fr 0.2fr;
 }
 
 /* .bodysec {
@@ -124,7 +125,7 @@ body {
   margin: 0 auto;
 } */
 
-/* Section 2: About/Info section includes image and text describing organization */
+/* Section 2: About - includes image and text describing organization */
 #sec2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -153,7 +154,7 @@ body {
 }
 
 #abtunderline {
-  margin-top: 1vh;
+  margin-top: 0.5vh;
   margin-bottom: 5vh;
   height: 2px;
   width: 25%;
@@ -166,20 +167,113 @@ body {
   font-size: 0.95em;
 }
 
-/* #sec2 div {
-  border: 2px solid pink;
-} */
-
+/* Section 3: Products - includes image and a dropdown menu for a specific type of artist paper */
 #sec3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   border: 2px solid orange;
 }
 
-#sec4 {
-  border: 2px solid green;
+#dropdownbutton {
+  font-size: 2em;
+  cursor: pointer;
 }
 
+#sec3 div {
+  border: 2px solid pink;
+}
+
+/* Section 4: Statistics */
+#sec4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.statbold {
+  font-size: 2.5em;
+  font-weight: 500;
+}
+
+.statnorm {
+  font-size: 1.4em;
+  font-weight: 400;
+}
+
+#stat1 {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 14vw;
+}
+
+#stat2 {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#stat3 {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 3vw;
+}
+
+/* Section 5: Artist sponsors - 4 images with related text from each artist */
 #sec5 {
-  border: 2px solid blue;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.sponsorsec {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.sponsorimgsec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sponsorimg {
+  height: 19vw;
+  width: 19vw;
+  border-radius: 50%;
+}
+
+#artistimg1 {
+  background-image: url("img/cytwombly.jpeg");
+  background-size: cover;
+}
+
+#artistimg2 {
+  background-image: url("img/robertrausch.jpg");
+  background-size: cover;
+}
+
+#artistimg3 {
+  background-image: url("img/jeanmichel.jpg");
+  background-size: cover;
+}
+
+#artistimg4 {
+  background-image: url("img/hiroshi.jpg");
+  background-size: cover;
+}
+
+.sponsorname {
+  font-weight: 400;
+  margin-left: 1vw;
+  margin-top: 10.25vh;
+}
+
+.sponsortxt {
+  width: 80%;
+  font-size: 0.85em;
+  margin-left: 1vw;
 }
 
 #footbar {
