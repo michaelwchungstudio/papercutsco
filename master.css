@@ -117,7 +117,7 @@ body {
   width: 90vw;
   margin: 0 auto;
   display: grid;
-  grid-template-rows: 0.55fr 1fr 0.25fr 1fr 0.2fr;
+  grid-template-rows: 0.6fr 0.4fr 0.25fr 1fr 0.2fr;
 }
 
 /* .bodysec {
@@ -157,7 +157,7 @@ body {
 #abtunderline {
   margin-top: 0.5vh;
   margin-bottom: 5vh;
-  height: 1.5px;
+  height: 1px;
   width: 35%;
   background-color: #192249;
 }
@@ -171,17 +171,100 @@ body {
 /* Section 3: Products - includes image and a dropdown menu for a specific type of artist paper */
 #sec3 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  border: 2px solid orange;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1fr 0.15fr 0.75fr;
 }
 
-#dropdownbutton {
-  font-size: 2em;
+#productheadersec {
+  grid-column: 1 / 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#productheadertext {
+  font-size: 1.85em;
+  font-weight: 500;
+  text-align: center;
+}
+
+#productunderline {
+  height: 1px;
+  width: 12%;
+  background-color: #192249;
+  margin-top: 0.5vh;
+  margin-bottom: 10vh;
+}
+
+.dropdownsec {
+  margin-bottom: 15vh;
+}
+
+.dropdown {
+  font-size: 1.6em;
+  font-weight: 300;
+  margin-left: 37%;
   cursor: pointer;
 }
 
-#sec3 div {
-  border: 2px solid pink;
+#drawdropdown {
+  opacity: 0;
+  transition: 2.25s;
+  font-size: 0.75em;
+  font-weight: 300;
+  line-height: 2;
+  cursor: pointer;
+}
+
+#drawdropdown:first-child {
+  margin-top: 2vh;
+}
+
+#drawdropdown p:hover {
+  font-weight: 500;
+}
+
+.dropdown:hover #drawdropdown {
+  opacity: 1;
+}
+
+#drawdropdown p {
+  font-size: 0.9em;
+}
+
+#productsecdivider {
+  grid-column: 1 / 4;
+  display: flex;
+  justify-content: center;
+}
+
+#productsecunderline {
+  height: 1px;
+  width: 80%;
+  background-color: #192249;
+}
+
+.productspecificunderline {
+  margin-top: 0.75vh;
+  margin-bottom: 2vh;
+  height: 1px;
+  width: 45%;
+  background-color: #192249;
+}
+
+#psu3 {
+  width: 30%;
+}
+
+.productimgsec {
+  grid-column: 1 / 4;
+}
+
+#productimg {
+  background-image: url("img/supplystock.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
 }
 
 /* Section 4: Statistics */
@@ -309,6 +392,88 @@ body {
   letter-spacing: 0.15px;
 }
 
+/* Footer - Social media icons and copyright protection */
 #footbar {
-  border: 2px solid purple;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5vh;
+}
+
+.smiconswrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+}
+
+.smicon {
+  height: 35px;
+  width: 35px;
+  display: inline-block;
+  margin: 0 10px;
+  filter: grayscale(60%);
+}
+
+.smicon:hover {
+  filter: grayscale(0%);
+}
+
+#fblogo {
+  background-image: url("img/fb.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#instalogo {
+  background-image: url("img/instagram.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#twitterlogo {
+  background-image: url("img/twitter.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 4px;
+}
+
+#pinterestlogo {
+  background-image: url("img/pinterest.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#youtubelogo {
+  background-image: url("img/youtube.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 5px;
+}
+
+#subscribetext {
+  margin-top: 4vh;
+  font-size: 0.95em;
+}
+
+#newsletter {
+  height: 38px;
+  width: 350px;
+  margin-top: 1vh;
+  font-size: 0.85em;
+}
+
+#subscribebutton {
+  display: inline-block;
+  background-color: #192249;
+  color: white;
+  font-weight: 300;
+  text-align: center;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#copyright {
+  text-align: center;
+  font-size: 0.8em;
+  margin-top: 5vh;
 }
