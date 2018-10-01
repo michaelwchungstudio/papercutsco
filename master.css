@@ -83,6 +83,19 @@ body {
 #logotype {
   font-size: 3em;
   margin-left: 2.25vw;
+  overflow: hidden;
+  animation-name: slidein;
+  animation-duration: 2.25s;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: -100%;
+  }
+
+  to {
+    margin-left: 2.25vw;
+  }
 }
 
 /* Navigation Bar */
