@@ -15,7 +15,7 @@ Upon successful completion of this project, the student will demonstrate their u
 
 ## Authors
 
-* **Michael Chung** - *Initial work*
+* **Michael Chung**
 
 ## License
 
