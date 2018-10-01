@@ -155,7 +155,7 @@ body {
 }
 
 #abtunderline {
-  margin-top: 0.5vh;
+  margin-top: 0.75vh;
   margin-bottom: 5vh;
   height: 1px;
   width: 35%;
@@ -190,9 +190,9 @@ body {
 
 #productunderline {
   height: 1px;
-  width: 12%;
+  width: 14%;
   background-color: #192249;
-  margin-top: 0.5vh;
+  margin-top: 0.75vh;
   margin-bottom: 10vh;
 }
 
@@ -248,7 +248,7 @@ body {
   margin-top: 0.75vh;
   margin-bottom: 2vh;
   height: 1px;
-  width: 45%;
+  width: 48%;
   background-color: #192249;
 }
 
@@ -375,13 +375,13 @@ body {
 }
 
 #underline2 {
-  width: 68%;
+  width: 72%;
 }
 #underline3 {
-  width: 68%;
+  width: 71%;
 }
 #underline4 {
-  width: 58%;
+  width: 60%;
 }
 
 .sponsortxt {
