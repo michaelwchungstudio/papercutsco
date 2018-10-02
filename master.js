@@ -13,7 +13,7 @@ modalBox.style.borderTop = "5px solid #192249"
 // modalBox.style.border = "1px solid black";
 modalBox.style.borderRadius = "1%";
 modalBox.style.textAlign = "center";
-modalBox.style.position = "absolute";
+modalBox.style.position = "fixed";
 modalBox.style.left = "0";
 modalBox.style.right = "0";
 modalBox.style.top = "17.5vh";
@@ -94,7 +94,21 @@ modalBox.appendChild(submitButton);
 
 // Calls showModal after 2 seconds (brings up the "popup").
 function start() {
-  setTimeout(showModal, 1500);
+  setTimeout(showModal, 2000);
+}
+
+// Fade in function (test)
+function unfade(element) {
+    var opac = 0.1;  // initial opacity
+    element.style.display = 'block';
+    var timer = setInterval(function () {
+        if (opac >= 1){
+            clearInterval(timer);
+        }
+        element.style.opacity = opac;
+        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+        op += op * 0.1;
+    }, 10);
 }
 
 // Runs start function upon load.
