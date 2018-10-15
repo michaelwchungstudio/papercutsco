@@ -76,7 +76,7 @@ body {
 /* Top "bar" */
 .headerbar {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 0.7fr 1fr;
   /* border: 2px solid black; */
 }
 
@@ -127,7 +127,7 @@ body {
 
 .motto {
   font-weight: 400;
-  font-size: 7.5em;
+  font-size: 6.5em;
   margin-top: 23.5vh;
   text-align: center;
 }
@@ -166,7 +166,6 @@ body {
   border-radius: 50%;
   margin: 10vh 0;
   margin-left: 3vw;
-  /* border: 1px solid #192249; */
 }
 
 #abtheadertext {
@@ -217,7 +216,7 @@ body {
 .dropdown {
   font-size: 1.6em;
   font-weight: 300;
-  margin-left: 37%;
+  margin-left: 25%;
   cursor: pointer;
 }
 
@@ -495,9 +494,9 @@ body {
 /* Media Query */
 
 /* Tablet */
-@media (min-width: 481px) and (max-width: 1024px) {
+@media (min-width: 600px) and (max-width: 1024px) {
   body {
-    font-size: 14px;
+    font-size: 14.75px;
   }
 
   .wrapper {
@@ -506,35 +505,82 @@ body {
   }
 
   /* Landing Page */
+  #navbar ul {
+    margin-top: 2em;
+    margin-right: 2vw;
+    text-align: right;
+  }
+
   #navbar ul li {
     list-style: none;
     display: block;
+    padding: 2.5px 0;
+    font-size: 1.05em;
+  }
+
+  .motto {
+    font-weight: 400;
+    font-size: 5.5em;
+    margin-top: 23.5vh;
+    text-align: center;
   }
 
   /* About Section */
   #sec2 {
     display: block;
-    padding-top: 5vh;
   }
 
   #aboutsec {
-    margin-left: 8.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   #aboutimg {
-    height: 65vw;
-    width: 65vw;
+    height: 60vw;
+    width: 60vw;
     margin: 5vh auto;
   }
 
-  /* Product Section */
-  .dropdown {
-    margin-left: 25%;
+  #abtunderline {
+    opacity: 0;
   }
+
+  .abttext {
+    line-height: 1.5;
+    width: 75%;
+    font-size: 0.95em;
+  }
+
+  #abtheadertext {
+    margin-top: 5vh;
+  }
+
+  /* Product Section */
 
   #productimg {
     width: 90%;
     margin: 0 auto;
+  }
+
+  #miscdropdown {
+    padding-right: 5vw;
+  }
+
+  .dropdown {
+    font-size: 1.5em;
+    font-weight: 300;
+    margin-left: 25%;
+    cursor: pointer;
+  }
+
+  #drawdropdown {
+    font-size: 0.75em;
+  }
+
+  #drawdropdown p {
+    font-size: 0.9em;
   }
 
   /* Statistics Section */
@@ -578,9 +624,9 @@ body {
 }
 
 /* Phone */
-@media screen and (max-width:480px) {
+@media screen and (max-width:599px) {
   body {
-    font-size: 12px;
+    font-size: 12.5px;
   }
 
   #logotype {
@@ -608,8 +654,8 @@ body {
 
   .motto {
     font-weight: 400;
-    font-size: 4em;
-    margin-top: 23.5vh;
+    font-size: 4.5em;
+    margin-top: 19vh;
     text-align: center;
   }
 
@@ -622,7 +668,10 @@ body {
   }
 
   #aboutsec {
-    margin-left: 8.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   #aboutimg {
@@ -643,7 +692,7 @@ body {
   }
 
   .dropdown {
-    margin-left: 25%;
+    margin-left: 38%;
   }
 
   #productimg {
