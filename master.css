@@ -10,6 +10,7 @@ body {
   font-weight: 400;
   color: #192249;
   background-color: #FDF8F5;
+  font-size: 16px;
 }
 
 @font-face {
@@ -109,7 +110,7 @@ body {
   list-style: none;
   display: inline;
   font-weight: 300;
-  font-size: 1.1em;
+  font-size: 1.15em;
   letter-spacing: 2.5px;
   padding: 0 20px;
 }
@@ -136,7 +137,7 @@ body {
   width: 90vw;
   margin: 0 auto;
   display: grid;
-  grid-template-rows: 0.55fr 0.4fr 0.25fr 1fr 0.2fr;
+  grid-template-rows: 0.4fr 0.4fr 0.15fr 1fr 0.2fr;
 }
 
 /* .bodysec {
@@ -178,7 +179,7 @@ body {
   margin-top: 0.75vh;
   margin-bottom: 5vh;
   height: 1px;
-  width: 35%;
+  width: 300px;
   background-color: #192249;
 }
 
@@ -207,14 +208,6 @@ body {
   font-size: 1.85em;
   font-weight: 500;
   text-align: center;
-}
-
-#productunderline {
-  height: 1px;
-  width: 14%;
-  background-color: #192249;
-  margin-top: 0.75vh;
-  margin-bottom: 10vh;
 }
 
 .dropdownsec {
@@ -269,12 +262,12 @@ body {
   margin-top: 0.75vh;
   margin-bottom: 2vh;
   height: 1px;
-  width: 48%;
+  width: 150px;
   background-color: #192249;
 }
 
 #psu3 {
-  width: 30%;
+  width: 100px;
 }
 
 .productimgsec {
@@ -392,17 +385,17 @@ body {
 }
 
 #underline1 {
-  width: 45%;
+  width: 175px;
 }
 
 #underline2 {
-  width: 72%;
+  width: 275px;
 }
 #underline3 {
-  width: 71%;
+  width: 265px;
 }
 #underline4 {
-  width: 60%;
+  width: 225px;
 }
 
 .sponsortxt {
@@ -497,4 +490,258 @@ body {
   text-align: center;
   font-size: 0.8em;
   margin-top: 5vh;
+}
+
+/* Media Query */
+
+/* Tablet */
+@media (min-width: 481px) and (max-width: 1024px) {
+  body {
+    font-size: 14px;
+  }
+
+  .wrapper {
+    width: 100vw;
+    grid-template-rows: 0.2fr 0.2fr 0.2fr 1fr 0.2fr;
+  }
+
+  /* Landing Page */
+  #navbar ul li {
+    list-style: none;
+    display: block;
+  }
+
+  /* About Section */
+  #sec2 {
+    display: block;
+    padding-top: 5vh;
+  }
+
+  #aboutsec {
+    margin-left: 8.5vw;
+  }
+
+  #aboutimg {
+    height: 65vw;
+    width: 65vw;
+    margin: 5vh auto;
+  }
+
+  /* Product Section */
+  .dropdown {
+    margin-left: 25%;
+  }
+
+  #productimg {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* Statistics Section */
+  #sec4 {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 4vh 0;
+  }
+
+  #sec4 p {
+    text-align: center;
+  }
+
+  #stat1 {
+    margin-left: 0;
+  }
+
+  #stat3 {
+    margin-left: 0;
+  }
+
+  /* Artist Section */
+  #sec5 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+  }
+
+  .sponsortxtsec {
+    padding-bottom: 4vh;
+  }
+
+  .sponsorimg {
+    height: 33vw;
+    width: 33vw;
+    margin-top: 2.5vh;
+  }
+}
+
+/* Phone */
+@media screen and (max-width:480px) {
+  body {
+    font-size: 12px;
+  }
+
+  #logotype {
+    margin-left: 4vw;
+  }
+
+  .wrapper {
+    width: 100vw;
+    grid-template-rows: 0.2fr 0.2fr 0.125fr 1fr 0.2fr;
+  }
+
+  /* Landing Page */
+  #navbar ul {
+    margin-top: 2em;
+    margin-right: 2vw;
+    text-align: right;
+  }
+
+  #navbar ul li {
+    list-style: none;
+    display: block;
+    padding: 1.5px 0;
+    font-size: 1em;
+  }
+
+  .motto {
+    font-weight: 400;
+    font-size: 4em;
+    margin-top: 23.5vh;
+    text-align: center;
+  }
+
+  /* About Section */
+  #sec2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 1fr;
+    padding-top: 0;
+  }
+
+  #aboutsec {
+    margin-left: 8.5vw;
+  }
+
+  #aboutimg {
+    height: 65vw;
+    width: 65vw;
+    margin: 5vh auto;
+  }
+
+  #abtheadertext {
+    margin-top: 2vh;
+  }
+
+  /* Product Section */
+  #sec3 {
+    display: grid;
+    grid-template-rows: 0.2fr 1fr 0.8fr 1fr 0.15fr 0.75fr;
+    padding-top: 8vh;
+  }
+
+  .dropdown {
+    margin-left: 25%;
+  }
+
+  #productimg {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .dropdownsec {
+    grid-column: 1 / 4;
+    margin-bottom: 5vh;
+  }
+
+  .productspecificunderline {
+    margin-top: 0.75vh;
+    margin-bottom: 2vh;
+    height: 1px;
+    width: 125px;
+    background-color: #192249;
+  }
+
+  #psu3 {
+    width: 80px;
+  }
+
+  /* Statistics Section */
+  #sec4 {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 0 0;
+    margin-top: 5vh;
+  }
+
+  #sec4 p {
+    text-align: center;
+  }
+
+  #stat1 {
+    margin-left: 0;
+  }
+
+  #stat3 {
+    margin-left: 0;
+  }
+
+  /* Artist Section */
+  #sec5 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+  }
+
+  .sponsorsec {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr;
+  }
+
+  .sponsortxtsec {
+    padding-bottom: 2vh;
+    padding-left: 15vw;
+  }
+
+  .sponsorimg {
+    height: 40vw;
+    width: 40vw;
+    margin-top: 2.5vh;
+    margin-bottom: 3.75vh;
+  }
+
+  #underline1 {
+    width: 125px;
+  }
+
+  #underline2 {
+    width: 205px;
+  }
+
+  #underline3 {
+    width: 200px;
+  }
+
+  #underline4 {
+    width: 165px;
+  }
+
+  #newslettersec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #newsletter {
+    width: 95%;
+    margin-bottom: 1vh;
+    border: 1px solid black;
+  }
 }

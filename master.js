@@ -112,4 +112,4 @@ function unfade(element) {
 }
 
 // Runs start function upon load.
-window.addEventListener('load', start);
+// window.addEventListener('load', start);
