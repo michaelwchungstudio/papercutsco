@@ -10,7 +10,6 @@ modalBox.style.backgroundColor = "white";
 modalBox.style.marginLeft = "auto";
 modalBox.style.marginRight = "auto";
 modalBox.style.borderTop = "5px solid #192249"
-// modalBox.style.border = "1px solid black";
 modalBox.style.borderRadius = "1%";
 modalBox.style.textAlign = "center";
 modalBox.style.position = "fixed";
