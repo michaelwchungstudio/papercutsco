@@ -1,10 +1,20 @@
+![Site Landing](siteimg/landing.png)
+
 # Paper Cuts Co.
 
 One page website for a fictional paper company.
 
 ## Objectives
 
-Upon successful completion of this project, the student will demonstrate their understanding of semantic HTML, proper element targeting in CSS, behavioral javascript, animations and understanding the website user.
+Demonstrate an understanding of semantic HTML, proper element targeting in CSS, behavioral javascript, animations and understanding the website user.
+
+![About](siteimg/about.png)
+
+![Products](siteimg/products.png)
+
+![Reviews](siteimg/reviews.png)
+
+![Footer](siteimg/footer.png)
 
 ## Built With
 
